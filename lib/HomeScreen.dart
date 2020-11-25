@@ -17,6 +17,7 @@ class _HomeScreenState extends State<HomeScreen> {
   var show = false;
   var showsubmit = true;
   var visible = false;
+  var s = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -106,7 +107,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         var p = ((5 - r) * 100) / 5;
                         if (p > 40) {
                           setState(() {
-                            scores = "0";
+                            s = 0;
+                            scores = s.toString();
                           });
                         } else {
                           setState(() {
@@ -128,7 +130,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         var p = ((7 - r) * 100) / 7;
                         if (p > 40) {
                           setState(() {
-                            scores = "1";
+                            s = s + 1;
+                            scores = s.toString();
                           });
                         } else {
                           setState(() {
@@ -150,7 +153,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         var p = ((6 - r) * 100) / 6;
                         if (p > 40) {
                           setState(() {
-                            scores = "2";
+                            s = s + 2;
+                            scores = s.toString();
                           });
                         } else {
                           setState(() {
@@ -172,7 +176,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         var p = ((7 - r) * 100) / 7;
                         if (p > 40) {
                           setState(() {
-                            scores = "2";
+                            s = s + 2;
+                            scores = s.toString();
                           });
                         } else {
                           setState(() {
@@ -194,7 +199,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         var p = ((5 - r) * 100) / 5;
                         if (p > 40) {
                           setState(() {
-                            scores = "2";
+                            s = s + 2;
+                            scores = s.toString();
                           });
                         } else {
                           setState(() {
@@ -216,7 +222,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         var p = ((6 - r) * 100) / 6;
                         if (p > 40) {
                           setState(() {
-                            scores = "2";
+                            s = s + 4;
+                            scores = s.toString();
                           });
                         } else {
                           setState(() {
@@ -238,7 +245,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         var p = ((7 - r) * 100) / 7;
                         if (p > 40) {
                           setState(() {
-                            scores = "4";
+                            s = s + 4;
+                            scores = s.toString();
                           });
                         } else {
                           setState(() {
@@ -260,7 +268,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         var p = ((8 - r) * 100) / 8;
                         if (p > 40) {
                           setState(() {
-                            scores = "4";
+                            s = s + 4;
+                            scores = s.toString();
                           });
                         } else {
                           setState(() {
@@ -282,7 +291,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         var p = ((7 - r) * 100) / 7;
                         if (p > 40) {
                           setState(() {
-                            scores = "6";
+                            s = s + 6;
+                            scores = s.toString();
                           });
                         } else {
                           setState(() {
@@ -304,7 +314,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         var p = ((8 - r) * 100) / 8;
                         if (p > 40) {
                           setState(() {
-                            scores = "6";
+                            s = s + 6;
+                            scores = s.toString();
                           });
                         } else {
                           setState(() {
@@ -337,6 +348,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   showsubmit = true;
                   score = "0.0";
                   m = 0.0;
+                  s = 0;
                 });
               },
             ),
