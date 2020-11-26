@@ -2,6 +2,10 @@
 
 This Code works like the following way
 
+Pls run the game.cpp file on any c++ compiler to play game 
+
+To see Cricket Game refer to the folder for app for testing to get the android build of cricket app
+
 Input Schema is like 
 1f : player 1 move forward one step
 2r : player 2 move right one step
